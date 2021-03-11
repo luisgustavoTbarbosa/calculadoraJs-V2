@@ -6,6 +6,13 @@ let total
 let numberImput
 let conta = []
 
+function limpar() {
+  total = 0
+  numberImput = 0
+  conta = []
+  input.value = ""
+}
+
 function addNumber(valueNumber) {
   if(numberImput){
     numberImput += valueNumber;
@@ -48,7 +55,7 @@ simbles.forEach((simble) => {
   simble.addEventListener('click', () => {
     const valueSimble = simble.value
     if(simble.innerText == 'AC'){
-      console.log('limpando')
+      limpar()
     }else if(simble.innerText == '='){
       executeConta()
     }

@@ -28,7 +28,7 @@ main {
 main .container-calc {
   background: #202024;
   padding: 1rem 2rem;
-
+  width: 30rem;
   border-radius: 5px;
 }
 
